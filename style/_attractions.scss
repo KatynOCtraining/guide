@@ -1,0 +1,20 @@
+.attractions {
+  padding: 2rem;
+  text-align: center;
+  display: grid; /* Utilise une grille */
+  grid-template-columns: repeat(3, 1fr); /* 3 colonnes de largeur égale */
+  gap: 1rem; /* Espace entre les cartes */
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 0; /* Supprime la marge, car l'espace est géré par le gap */
+  text-align: left; /* Aligne le texte à gauche */
+}
+
+.events {
+  padding: 2rem;
+  text-align: center;
+}

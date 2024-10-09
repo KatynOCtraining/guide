@@ -1,0 +1,24 @@
+.hero {
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: white;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+.hero button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  color: var(--sea-blue);
+  border: none;
+  border-radius: 5px;
+}
