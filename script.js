@@ -1,20 +1,3 @@
-function createAttractionCard(attraction) {
-  return `
-      <div class="card">
-        <h3>${attraction.name}</h3>
-        <p>${attraction.description}</p>
-        <p><strong>Adresse :</strong> ${attraction.address}</p>
-        <p><strong>Horaires d'ouverture :</strong> ${Object.entries(
-          attraction.opening_hours
-        )
-          .map(([day, hours]) => `${day}: ${hours}`)
-          .join(", ")}</p>
-        <p><strong>Prix :</strong> ${attraction.price}</p>
-        <a href="${attraction.website}" target="_blank">Site web</a>
-      </div>
-    `;
-}
-
 // Charger les données JSON et générer les cartes
 fetch("./data.json")
   .then((response) => response.json())
@@ -23,12 +6,20 @@ fetch("./data.json")
     data.attractions.forEach((attraction) => {
       attractionCards.innerHTML += createAttractionCard(attraction);
     });
+
+    // Ajouter les écouteurs d'événements pour ouvrir la modale
+    const cards = document.querySelectorAll(".card");
+    cards.forEach((card) => {
+      card.addEventListener("click", () => {
+        const attraction = JSON.parse(card.getAttribute("data-attraction"));
+        showModal(attraction);
+      });
+    });
   })
   .catch((error) =>
     console.error("Erreur lors du chargement des attractions:", error)
   );
 
-// Fonction pour créer une carte d'attraction simple
 function createAttractionCard(attraction) {
   // Déterminer si l'attraction est ouverte
   const today = new Date();
@@ -42,7 +33,8 @@ function createAttractionCard(attraction) {
     "saturday",
   ];
   const currentDay = dayNames[today.getDay()];
-  const currentTime = today.getHours() + ":" + today.getMinutes();
+  const currentTime =
+    today.getHours() + ":" + String(today.getMinutes()).padStart(2, "0"); // Format HH:mm
   let isOpen = false;
 
   const hoursToday = attraction.opening_hours[currentDay];
@@ -54,18 +46,19 @@ function createAttractionCard(attraction) {
   }
 
   return `
-      <div class="card" data-attraction='${JSON.stringify(attraction)}'>
-        <img src="${attraction.image}" alt="${
+    <div class="card" data-attraction='${JSON.stringify(attraction)}'>
+      <img src="${attraction.image}" alt="${
     attraction.name
   }" style="width:100%; height:50px; object-fit: cover;">
-        <h3>${attraction.name}</h3>
-        <p>${
-          isOpen
-            ? '<span style="color: green;">Ouvert</span>'
-            : '<span style="color: red;">Fermé</span>'
-        }</p>
-      </div>
-    `;
+      <h3>${attraction.name}</h3>
+      <p>${
+        isOpen
+          ? '<span style="color: green;">Ouvert</span>'
+          : '<span style="color: red;">Fermé</span>'
+      }</p>
+      <p><strong>Prix :</strong> ${attraction.price}</p>
+    </div>
+  `;
 }
 
 // Fonction pour afficher la modale avec les détails de l'attraction
@@ -97,40 +90,12 @@ function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-// Charger les données JSON et générer les cartes
-fetch("./data.json")
-  .then((response) => response.json())
-  .then((data) => {
-    const attractionCards = document.getElementById("attraction-cards");
-    data.attractions.forEach((attraction) => {
-      attractionCards.innerHTML += createAttractionCard(attraction);
-    });
-
-    // Ajouter les écouteurs d'événements pour ouvrir la modale
-    const cards = document.querySelectorAll(".card");
-    cards.forEach((card) => {
-      card.addEventListener("click", () => {
-        const attraction = JSON.parse(card.getAttribute("data-attraction"));
-        showModal(attraction);
-      });
-    });
-  })
-  .catch((error) =>
-    console.error("Erreur lors du chargement des attractions:", error)
-  );
-
 // Gérer la fermeture de la modale
 document.querySelector(".close-button").addEventListener("click", () => {
   document.getElementById("modal").style.display = "none";
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Gérer la fermeture de la modale
-  const closeButton = document.querySelector(".close-button");
-  closeButton.addEventListener("click", () => {
-    document.getElementById("modal").style.display = "none";
-  });
-
   // Fermer la modale en cliquant en dehors du contenu
   window.addEventListener("click", (event) => {
     const modal = document.getElementById("modal");

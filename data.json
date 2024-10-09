@@ -24,7 +24,7 @@
     },
     {
       "name": "Le Port du Havre",
-      "description": "L'un des plus grands ports de France, offrant une vue spectaculaire sur les navires et l'activité maritime.",
+      "description": "L\u2019Un des plus grands ports de France, offrant une vue spectaculaire sur les navires et l\u2019activité maritime.",
       "category": "Port",
       "address": "Port du Havre, 76600 Le Havre",
       "opening_hours": {
@@ -39,14 +39,14 @@
       "website": "https://www.havre.fr/port",
       "price": "Gratuit",
       "coordinates": {
-        "latitude": 49.494,
-        "longitude": 0.107
+        "latitude": 49.494134,
+        "longitude": 0.107134
       },
       "image": "https://balguerie.com/images/Port_du_Havre.jpg"
     },
     {
       "name": "Le MuMa",
-      "description": "britant une impressionnante collection d'œuvres impressionnistes et modernes.",
+      "description": "Abritant une impressionnante collection d\u2019œuvres impressionnistes et modernes.",
       "category": "Culture",
       "address": "Port du Havre, 76600 Le Havre",
       "opening_hours": {
@@ -61,8 +61,8 @@
       "website": "https://www.musees-normandie.fr/IMG/logo/rubon133.jpg?1543935728",
       "price": "Gratuit",
       "coordinates": {
-        "latitude": 49.485,
-        "longitude": 0.102
+        "latitude": 49.485134,
+        "longitude": 0.102134
       },
       "image": "https://www.musees-normandie.fr/IMG/logo/rubon133.jpg?1543935728"
     },
@@ -83,10 +83,98 @@
       "website": "https://www.musees-normandie.fr/IMG/logo/rubon133.jpg?1543935728",
       "price": "Gratuit",
       "coordinates": {
-        "latitude": 49.494,
-        "longitude": 0.091
+        "latitude": 49.494134,
+        "longitude": 0.091134
       },
       "image": "https://photos.smugmug.com/Travel/France/Le-Havre/i-Gn4VmGp/4/e4089f71/L/IMG_1679-L.jpg"
+    },
+    {
+      "name": "Le stade Océane",
+      "description": "Le Stade Océane situé au Havre est un stade multifonction disposant de 25 000 places assises en configuration football",
+      "category": "Sport",
+      "address": "Bd de Leningrad, 76600 Le Havre",
+      "opening_hours": {
+        "monday": "Ouvert 24h/24",
+        "tuesday": "Ouvert 24h/24",
+        "wednesday": "Ouvert 24h/24",
+        "thursday": "Ouvert 24h/24",
+        "friday": "Ouvert 24h/24",
+        "saturday": "Ouvert 24h/24",
+        "sunday": "Ouvert 24h/24"
+      },
+      "website": "https://stadeoceane.com/",
+      "price": "Gratuit",
+      "coordinates": {
+        "latitude": 49.49941831831471,
+        "longitude": 0.16976656656047784
+      },
+      "image": "https://www.staderennais.com/sites/default/files/styles/16_9/private/2024-02/Site1920x1080.jpg.webp?itok=TTojQwT9"
+    },
+    {
+      "name": "La Cathédrale Notre-Dame",
+      "description": "Une belle cathédrale gothique qui se distingue par son architecture et son histoire.",
+      "category": "Patrimoine",
+      "address": "",
+      "opening_hours": {
+        "monday": "Ouvert 24h/24",
+        "tuesday": "Ouvert 24h/24",
+        "wednesday": "Ouvert 24h/24",
+        "thursday": "Ouvert 24h/24",
+        "friday": "Ouvert 24h/24",
+        "saturday": "Ouvert 24h/24",
+        "sunday": "Ouvert 24h/24"
+      },
+      "website": "",
+      "price": "Gratuit",
+      "coordinates": {
+        "latitude": 49.48720790901691,
+        "longitude": 0.10914442348458134
+      },
+      "image": "https://www.lehavre.fr/sites/default/files/thumbnails/image/notre-dame-apres-travaux-2021canne-bettina-brunet.jpg"
+    },
+    {
+      "name": "Le Volcan",
+      "description": "Centre culturel conçu par l’architecte Oscar Niemeyer, accueillant des concerts, des spectacles et des événements.",
+      "category": "Culture",
+      "address": "2 Place Niemeyer, 76600 Le Havre",
+      "opening_hours": {
+        "monday": "Ouvert 24h/24",
+        "tuesday": "Ouvert 24h/24",
+        "wednesday": "Ouvert 24h/24",
+        "thursday": "Ouvert 24h/24",
+        "friday": "Ouvert 24h/24",
+        "saturday": "Ouvert 24h/24",
+        "sunday": "Ouvert 24h/24"
+      },
+      "website": "https://bibliotheques.lehavre.fr/bibliotheque/bibliotheque-oscar-niemeyer",
+      "price": "Gratuit",
+      "coordinates": {
+        "latitude": 49.490854107157816,
+        "longitude": 0.10669154142712221
+      },
+      "image": "https://www.francetvinfo.fr/pictures/RR7u1cAkXdin4C1AMnYMEb1K7_k/55x0:944x500/1500x843/2019/04/12/volcanniemeyerlehavre.jpg"
+    },
+    {
+      "name": "Catène de Conteneurs",
+      "description": "Cette œuvre colossale et inédite surplombe le Quai Southampton du Havre sur près de 30 mètres de haut.",
+      "category": "Patrimoine",
+      "address": "Quai de Southampton, 76600 Le Havre",
+      "opening_hours": {
+        "monday": "Ouvert 24h/24",
+        "tuesday": "Ouvert 24h/24",
+        "wednesday": "Ouvert 24h/24",
+        "thursday": "Ouvert 24h/24",
+        "friday": "Ouvert 24h/24",
+        "saturday": "Ouvert 24h/24",
+        "sunday": "Ouvert 24h/24"
+      },
+      "website": "",
+      "price": "Gratuit",
+      "coordinates": {
+        "latitude": 49.48502453039479,
+        "longitude": 0.10922227171052472
+      },
+      "image": "https://lh3.googleusercontent.com/p/AF1QipMO2aHNmMT9FTf7Qwsz0MYPJq7JxMHIxDfPOAiP=s680-w680-h510"
     }
   ]
 }
