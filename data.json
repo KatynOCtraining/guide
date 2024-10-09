@@ -1,0 +1,92 @@
+{
+  "attractions": [
+    {
+      "name": "Les jardins suspendus",
+      "description": "Un jardin botanique surplombant le port, offrant une promenade agréable avec des vues magnifiques.",
+      "category": "Jardin",
+      "address": "65 Rue du Fort, 29 Rue Albert Copieux, 76620 Le Havre",
+      "opening_hours": {
+        "monday": "Ouvert 24h/24",
+        "tuesday": "Ouvert 24h/24",
+        "wednesday": "Ouvert 24h/24",
+        "thursday": "Ouvert 24h/24",
+        "friday": "Ouvert 24h/24",
+        "saturday": "Ouvert 24h/24",
+        "sunday": "Ouvert 24h/24"
+      },
+      "website": "https://www.lehavre.fr/annuaire/les-jardins-suspendus",
+      "price": "Gratuit",
+      "coordinates": {
+        "latitude": 49.503148,
+        "longitude": 0.094435
+      },
+      "image": "https://cdt76.media.tourinsoft.eu/upload/les-jardins-suspendus-sma-mathilde-harel-800x600--8-.jpg"
+    },
+    {
+      "name": "Le Port du Havre",
+      "description": "L'un des plus grands ports de France, offrant une vue spectaculaire sur les navires et l'activité maritime.",
+      "category": "Port",
+      "address": "Port du Havre, 76600 Le Havre",
+      "opening_hours": {
+        "monday": "Ouvert 24h/24",
+        "tuesday": "Ouvert 24h/24",
+        "wednesday": "Ouvert 24h/24",
+        "thursday": "Ouvert 24h/24",
+        "friday": "Ouvert 24h/24",
+        "saturday": "Ouvert 24h/24",
+        "sunday": "Ouvert 24h/24"
+      },
+      "website": "https://www.havre.fr/port",
+      "price": "Gratuit",
+      "coordinates": {
+        "latitude": 49.494,
+        "longitude": 0.107
+      },
+      "image": "https://balguerie.com/images/Port_du_Havre.jpg"
+    },
+    {
+      "name": "Le MuMa",
+      "description": "britant une impressionnante collection d'œuvres impressionnistes et modernes.",
+      "category": "Culture",
+      "address": "Port du Havre, 76600 Le Havre",
+      "opening_hours": {
+        "monday": "11h-18h",
+        "tuesday": "11h-18h",
+        "wednesday": "11h-18h",
+        "thursday": "11h-18h",
+        "friday": "11h-18h",
+        "saturday": "11h-18h",
+        "sunday": "11h-18h"
+      },
+      "website": "https://www.musees-normandie.fr/IMG/logo/rubon133.jpg?1543935728",
+      "price": "Gratuit",
+      "coordinates": {
+        "latitude": 49.485,
+        "longitude": 0.102
+      },
+      "image": "https://www.musees-normandie.fr/IMG/logo/rubon133.jpg?1543935728"
+    },
+    {
+      "name": "La plage du Havre",
+      "description": "Situé dans le centre-ville, cet opéra offre des spectacles variés allant de la musique classique au théâtre contemporain.",
+      "category": "Culture",
+      "address": "13-16 Bd Albert 1er, 76600 Le Havre",
+      "opening_hours": {
+        "monday": "Ouvert 24h/24",
+        "tuesday": "Ouvert 24h/24",
+        "wednesday": "Ouvert 24h/24",
+        "thursday": "Ouvert 24h/24",
+        "friday": "Ouvert 24h/24",
+        "saturday": "Ouvert 24h/24",
+        "sunday": "Ouvert 24h/24"
+      },
+      "website": "https://www.musees-normandie.fr/IMG/logo/rubon133.jpg?1543935728",
+      "price": "Gratuit",
+      "coordinates": {
+        "latitude": 49.494,
+        "longitude": 0.091
+      },
+      "image": "https://photos.smugmug.com/Travel/France/Le-Havre/i-Gn4VmGp/4/e4089f71/L/IMG_1679-L.jpg"
+    }
+  ]
+}
