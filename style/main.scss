@@ -3,7 +3,7 @@
 @import "./herobanner";
 @import "./footer";
 @import "./attractions";
-@import "./map";
+
 @import "./modal";
 html,
 body,
@@ -129,15 +129,16 @@ table {
 
 body {
   font-family: "Oswald", sans-serif;
+  display: flex;
+  flex-direction: column;
+
+  height: 100vh;
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  height: 100vh;
   color: white;
   background: rgb(0, 18, 66);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 18, 66, 1) 0%,
-    rgba(0, 148, 198, 1) 100%
-  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: linear-gradient(180deg, var(--sea-blue) 0%, var(--sky-blue) 100%);
 }

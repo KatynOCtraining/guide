@@ -1,39 +1,45 @@
 @import "./variables";
-/* Styles pour la grille des attractions */
 .attractions-grid {
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(30%, 1fr)
-  ); /* Ajuste le nombre de colonnes automatiquement */
-  gap: 1rem; /* Espacement entre les cartes */
-  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem;
+  scrollbar-width: none; /* Firefox */
 }
 
-/* Styles pour les cartes simples */
+.attractions-grid::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Styles pour les cartes */
 .card {
+  flex: 0 0 auto;
+  width: 300px;
   border: 1px solid #ddd;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-  height: 120px;
+  border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.8);
   color: #000;
   text-align: center;
   cursor: pointer;
   transition: transform 0.2s;
   overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
-  img {
-    height: 50px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+  h3 {
+    font-size: x-large;
   }
 }
 
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
 .card:hover {
-  transform: scale(1.05); /* Effet de zoom au survol */
+  transform: scale(1.05);
 }
 
 /* Styles pour la modale */

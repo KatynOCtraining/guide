@@ -1,24 +1,42 @@
 .hero {
-  background-size: cover;
+  position: relative;
 
+  background-color: #f0f0f0; /* Couleur de fond temporaire */
+}
+
+.hero-nav {
+  overflow-x: auto;
+  white-space: nowrap;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: flex-start;
+}
 
-  color: white;
-  text-align: center;
-}
-.hero h1 {
-  font-size: 2.5rem;
+.hero-nav ul {
+  list-style: none;
   margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 5px;
 }
-.hero button {
-  padding: 10px 20px;
-  font-size: 1rem;
-  margin-top: 10px;
-  cursor: pointer;
-  background-color: #fff;
-  color: var(--sea-blue);
+
+.hero-nav .nav-btn {
+  color: black;
   border: none;
+  padding: 10px 20px;
   border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+}
+
+.hero-nav .nav-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Styles mobiles */
+@media (max-width: 768px) {
+  .hero-nav {
+    -webkit-overflow-scrolling: touch; /* Pour le défilement fluide sur iOS */
+  }
 }

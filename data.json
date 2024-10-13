@@ -3,7 +3,7 @@
     {
       "name": "Les jardins suspendus",
       "description": "Un jardin botanique surplombant le port, offrant une promenade agréable avec des vues magnifiques.",
-      "category": "Jardin",
+      "category": "Détente",
       "address": "65 Rue du Fort, 29 Rue Albert Copieux, 76620 Le Havre",
       "opening_hours": {
         "monday": "Ouvert 24h/24",
@@ -25,7 +25,7 @@
     {
       "name": "Le Port du Havre",
       "description": "L\u2019Un des plus grands ports de France, offrant une vue spectaculaire sur les navires et l\u2019activité maritime.",
-      "category": "Port",
+      "category": "Culture",
       "address": "Port du Havre, 76600 Le Havre",
       "opening_hours": {
         "monday": "Ouvert 24h/24",
@@ -69,7 +69,7 @@
     {
       "name": "La plage du Havre",
       "description": "Situé dans le centre-ville, cet opéra offre des spectacles variés allant de la musique classique au théâtre contemporain.",
-      "category": "Culture",
+      "category": "Détente",
       "address": "13-16 Bd Albert 1er, 76600 Le Havre",
       "opening_hours": {
         "monday": "Ouvert 24h/24",
@@ -113,7 +113,7 @@
     {
       "name": "La Cathédrale Notre-Dame",
       "description": "Une belle cathédrale gothique qui se distingue par son architecture et son histoire.",
-      "category": "Patrimoine",
+      "category": "Culture",
       "address": "",
       "opening_hours": {
         "monday": "Ouvert 24h/24",
@@ -157,7 +157,7 @@
     {
       "name": "Catène de Conteneurs",
       "description": "Cette œuvre colossale et inédite surplombe le Quai Southampton du Havre sur près de 30 mètres de haut.",
-      "category": "Patrimoine",
+      "category": "Culture",
       "address": "Quai de Southampton, 76600 Le Havre",
       "opening_hours": {
         "monday": "Ouvert 24h/24",

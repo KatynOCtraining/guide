@@ -1,12 +1,13 @@
 header {
   background-color: var(--sea-blue);
   color: white;
-
+  padding: 10px 20px;
   text-align: center;
 }
 nav {
   margin: 0.5rem 0;
   display: flex;
+  height: 100px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -23,8 +24,54 @@ nav {
     font-style: normal;
   }
 }
-nav a {
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.burger-menu span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* Navigation cachée par défaut */
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 5px;
+}
+
+.nav-links a {
   color: white;
   margin: 0 1rem;
   text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
 }
